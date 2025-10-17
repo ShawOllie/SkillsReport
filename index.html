@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form Table</title>
+        <script src="skills.js"></script>
+        <style>
+            h1 {
+                color: rgb(255, 100, 0);
+            }
+
+            #reportArea {
+                width: 800px;
+                margin-top: 1em;
+                padding: 1em;
+                font-family: monospace;
+            }
+
+            th {
+                background-color: darkblue;
+                color: white;
+                padding: 10px;
+                font-size: 18px;
+                border-right: 1px solid white;
+                border-bottom: 1px solid white;
+            }
+
+
+            #expertise {
+                display: flex;
+                justify-content: space-between;
+                background-color: steelblue;
+            }
+
+            #expertise div {
+                background-color: steelblue;
+            }
+
+            .expertise {
+                background-color: steelblue;
+            }
+
+            .row1 {
+                background-color: lightgray;
+                padding: 10px;
+                border: solid 1px black;
+                border-collapse: collapse;
+            }
+
+            .row2 {
+                background-color: lightyellow;
+                padding: 10px;
+                border: solid 1px black;
+                border-collapse: collapse;
+            }
+
+            table {
+                border-spacing: 0;
+                border-collapse: collapse;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Skills Report</h1>
+
+        <form>
+            <table>
+                <tr>
+                    <div id="header">
+                        <th rowspan="2">Area</th>
+                        <th rowspan="2">Skill Name</th>
+                        <th rowspan="2">Years</th>
+                        <th style="width:30%;">Level of Expertise</th>
+                        <th rowspan="2">Certified?</th>
+                    </div>
+                </tr>
+                <tr>
+                        <th class="expertise">
+                            <div id="expertise">
+                            <div>novice</div>
+                            <div>expert</div>
+                        </div>
+                        </th>
+                </tr>
+                <tr>
+                    <td class="row1">
+                        <select name="area">
+                            <option value="Database">Database</option>
+                            <option value="General Programming">General Programming</option>
+                            <option value="Quality Assurance">Quality Assurance</option>
+                            <option value="Web Development">Web Development</option>
+                        </select>
+                    </td>
+                    <td class="row1">
+                        <input>
+                    </td class="row1">
+                    <td class="row1">
+                        <input type="number" min="1" max="20">
+                    </td class="row1">
+                    <td style="width:30%;" class="row1">
+                        <input type="range" min="1" max="5" style="width:100%;">
+                    </td>
+                    <td class="row1">
+                        <input type="radio" name="cert">Yes
+                        <input type="radio" name="cert">No
+                    </td>
+                </tr>
+                <tr>
+                    <td class="row2">
+                    <select name="area">
+                        <option value="Database">Database</option>
+                        <option value="General Programming">General Programming</option>
+                        <option value="Quality Assurance">Quality Assurance</option>
+                        <option value="Web Development">Web Development</option>
+                    </select>
+                </td>
+                <td class="row2">
+                    <input>
+                </td class="row2">
+                <td class="row2">
+                    <input type="number" min="1" max="20">
+                </td class="row2">
+                <td style="width:30%;" class="row2">
+                    <input type="range" min="1" max="5" style="width:100%;">
+                </td>
+                <td class="row2">
+                    <input type="radio" name="cert1">Yes
+                    <input type="radio" name="cert1">No
+                </td></tr>
+                <tr>
+                    <td class="row1">
+                        <select name="area">
+                            <option value="Database">Database</option>
+                            <option value="General Programming">General Programming</option>
+                            <option value="Quality Assurance">Quality Assurance</option>
+                            <option value="Web Development">Web Development</option>
+                        </select>
+                    </td>
+                    <td class="row1">
+                        <input>
+                    </td class="row1">
+                    <td class="row1">
+                        <input type="number" min="1" max="20">
+                    </td class="row1">
+                    <td style="width:30%;" class="row1">
+                        <input type="range" min="1" max="5" style="width:100%;">
+                    </td>
+                    <td class="row1">
+                        <input type="radio" name="cert2">Yes
+                        <input type="radio" name="cert2">No
+                    </td>
+                </tr>
+                <tr>
+                    <td class="row2">
+                    <select name="area">
+                        <option value="Database">Database</option>
+                        <option value="General Programming">General Programming</option>
+                        <option value="Quality Assurance">Quality Assurance</option>
+                        <option value="Web Development">Web Development</option>
+                    </select>
+                </td>
+                <td class="row2">
+                    <input>
+                </td class="row2">
+                <td class="row2">
+                    <input type="number" min="1" max="20">
+                </td class="row2">
+                <td style="width:30%;" class="row2">
+                    <input type="range" min="1" max="5" style="width:100%;">
+                </td>
+                <td class="row2">
+                    <input type="radio" name="cert3">Yes
+                    <input type="radio" name="cert3">No
+                </td></tr>
+                <tr>
+                    <td class="row1">
+                        <select name="area">
+                            <option value="Database">Database</option>
+                            <option value="General Programming">General Programming</option>
+                            <option value="Quality Assurance">Quality Assurance</option>
+                            <option value="Web Development">Web Development</option>
+                        </select>
+                    </td>
+                    <td class="row1">
+                        <input>
+                    </td class="row1">
+                    <td class="row1">
+                        <input type="number" min="1" max="20">
+                    </td class="row1">
+                    <td style="width:30%;" class="row1">
+                        <input type="range" min="1" max="5" style="width:100%;">
+                    </td>
+                    <td class="row1">
+                        <input type="radio" name="cert4">Yes
+                        <input type="radio" name="cert4">No
+                    </td>
+                </tr>
+            </table>
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="reportArea">
+            <!-- don't put anything here -->
+        </div>
+    </body>
+</html>
